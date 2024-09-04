@@ -1,0 +1,39 @@
+.sectionList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+}
+
+
+.sectionCard {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    figcaption {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex: 1;
+
+        h3 {
+            font-size: 28px;
+            color: white;
+
+        }
+
+    }
+
+    img {
+        border-radius: 0 10px 10px 0;
+    }
+}

@@ -5,7 +5,7 @@ const NavBar = () => {
 
     const navItems = [
         { id: 1, title: 'forside', path: '/' },
-        { id: 2, title: 'sorteringsguide', path: '/sorteringsguide' },
+        { id: 2, title: 'sorteringsguide', path: '/sortering' },
         { id: 3, title: 'genbrugstationer', path: '/genbrugstationer' },
         { id: 4, title: 'artikler', path: '/artikler' },
         { id: 5, title: 'bestil container', path: '/bestil-container' },
