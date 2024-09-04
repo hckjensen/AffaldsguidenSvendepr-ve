@@ -10,7 +10,7 @@ const SectionCard = ({ section }) => {
 
 
     return (
-        <fig
+        <figure
             onClick={handleClick}
             className={styles.sectionCard}
             style={{
@@ -23,7 +23,7 @@ const SectionCard = ({ section }) => {
                 <h3>{section.title}</h3>
             </figcaption>
             <img src={section.image_url} alt="" />
-        </fig>
+        </figure>
     )
 }
 

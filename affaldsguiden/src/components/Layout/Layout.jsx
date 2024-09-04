@@ -15,7 +15,9 @@ const Layout = ({ children, heroImage }) => {
             <Header />
             <main>
                 <div className={styles.gradientOverlay}>
-                    <div className={styles.outerGradient}>
+                    <div
+                        className={styles.outerGradient}>
+
                         <div
                             className={styles.innerGradient}
                             style={{
