@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: column;
+
+
+    .topHeader {
+        margin: 0 200px;
+        padding-top: 20px;
+
+    }
+
+}
+
+
+.logo {
+    position: relative;
+
+    .icon {
+        position: absolute;
+        top: 0;
+
+
+    }
+
+}

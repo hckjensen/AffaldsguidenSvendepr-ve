@@ -1,0 +1,66 @@
+@use "../../styles/_variables" as *;
+
+.navBar {
+
+    // height: 60px;
+
+    border-top: 1px solid $moss-green;
+    border-bottom: 1px solid $moss-green;
+    font-family: $font-inter;
+
+    user-select: none;
+
+
+
+
+    .list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        margin-left: 200px;
+        list-style: none;
+
+
+
+
+        .listItem {
+            display: flex;
+            justify-content: center;
+            padding: 15px 50px;
+            border-right: 1px solid $moss-green;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: $kaki;
+                cursor: pointer;
+
+
+            }
+
+
+
+
+
+
+
+        }
+
+        a {
+            color: black;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 16px;
+
+            &.active {
+                background-color: $kaki;
+            }
+
+            &:first-of-type .listItem {
+                border-left: 1px solid $moss-green;
+            }
+
+        }
+    }
+}

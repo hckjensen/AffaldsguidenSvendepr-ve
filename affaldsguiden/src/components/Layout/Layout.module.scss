@@ -1,0 +1,49 @@
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        height: 100%;
+
+        .gradientOverlay {
+            .outerGradient {
+                position: absolute;
+                height: 750px;
+                width: 100%;
+                top: 0;
+                left: 0;
+                background: linear-gradient(180deg, #06682D 0%, #FFFFFF 100%);
+                z-index: -1;
+
+                .innerGradient {
+                    position: absolute;
+                    height: 100%;
+                    width: calc(100% - 400px); // Adjust width to account for margins
+                    top: 0;
+                    left: 200px; // Center the inner gradient
+                    background: linear-gradient(180deg, #D8EADB 0%, #FFFFFF 91%);
+                }
+            }
+        }
+
+
+
+        .contentContainer {
+            position: relative;
+            z-index: 1; // Ensure content is above the gradient
+            width: calc(100% - 400px); // Adjust width to account for margins
+            left: 200px; // Center the inner gradient
+            flex: 1; // Allow content to grow and push the footer down
+        }
+    }
+
+    footer {
+        position: relative;
+        z-index: 1;
+    }
+}

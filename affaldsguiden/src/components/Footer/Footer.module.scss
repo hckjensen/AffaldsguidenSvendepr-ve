@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-image: url('../../assets/Images/FooterBg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 350px;
+    padding: 0 200px;
+    padding-top: 200px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
