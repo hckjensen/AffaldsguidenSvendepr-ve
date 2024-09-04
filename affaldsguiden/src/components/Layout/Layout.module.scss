@@ -17,7 +17,7 @@
                 width: 100%;
                 top: 0;
                 left: 0;
-                background: linear-gradient(180deg, #06682D 0%, #FFFFFF 100%);
+                background: linear-gradient(180deg, rgba(6, 104, 45, 1) 0%, rgba(255, 255, 255, 1) 100%);
                 z-index: -1;
 
                 .innerGradient {
@@ -25,25 +25,32 @@
                     height: 100%;
                     width: calc(100% - 400px); // Adjust width to account for margins
                     top: 0;
-                    left: 200px; // Center the inner gradient
-                    background: linear-gradient(180deg, #D8EADB 0%, #FFFFFF 91%);
+                    left: 200px;
+                    mask-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+                    -webkit-mask-image: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+
                 }
+
             }
         }
-
-
-
-        .contentContainer {
-            position: relative;
-            z-index: 1; // Ensure content is above the gradient
-            width: calc(100% - 400px); // Adjust width to account for margins
-            left: 200px; // Center the inner gradient
-            flex: 1; // Allow content to grow and push the footer down
-        }
     }
 
-    footer {
+
+
+    .contentContainer {
         position: relative;
-        z-index: 1;
+        z-index: 1; // Ensure content is above the gradient
+        width: calc(100% - 400px); // Adjust width to account for margins
+        left: 200px; // Center the inner gradient
+        flex: 1; // Allow content to grow and push the footer down
     }
+}
+
+footer {
+    position: relative;
+    z-index: 1;
 }
