@@ -7,16 +7,12 @@ const ArticlePage = () => {
     const { slug } = useParams();
     const { articles, loading } = useArticles();
 
-    // Log the articles and loading state
-    console.log('Articles:', articles);
-    console.log('Loading:', loading);
-    console.log('Slug:', slug);
+
 
     // Find the article based on the slug
     const article = articles.find(article => article.slug === slug);
 
-    // Log the found article
-    console.log('Article:', article);
+
 
     // If loading, show a loading indicator
     if (loading) {

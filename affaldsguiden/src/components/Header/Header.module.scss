@@ -4,6 +4,9 @@
 
 
     .topHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin: 0 200px;
         padding-top: 20px;
 
@@ -22,4 +25,20 @@
 
     }
 
+}
+
+.loginButton {
+    user-select: none;
+
+
+    img {
+        cursor: pointer;
+    }
+
+}
+
+.loggedIn {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
 }

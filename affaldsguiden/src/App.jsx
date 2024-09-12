@@ -7,6 +7,7 @@ import CategoryList from './components/Sorting/CategoryList'
 import SectionList from './components/Sorting/SectionList'
 import ArticleList from './components/Articles/ArticleList'
 import ArticleDetail from './components/Articles/ArticleDetail'
+import LoginPage from './pages/LoginPage'
 
 function App() {
 
@@ -24,7 +25,7 @@ function App() {
             <Route index element={< ArticleList />} />
             <Route path=":slug" element={< ArticleDetail />} />
           </Route>
-          <Route path="/contact" element={<h1>Contact</h1>} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </Router>
     </>
